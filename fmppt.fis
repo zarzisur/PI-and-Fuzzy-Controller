@@ -1,0 +1,69 @@
+[System]
+Name='fmppt'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Vpv'
+Range=[-8.5 8.5]
+NumMFs=5
+MF1='NB':'trimf',[-12.75 -8.5 -4.25]
+MF2='NS':'trimf',[-8.5 -4.25 0]
+MF3='ZE':'trimf',[-4.25 0 4.25]
+MF4='PS':'trimf',[0 4.25 8.5]
+MF5='PB':'trimf',[4.25 8.5 12.75]
+
+[Input2]
+Name='Ipv'
+Range=[-1.6 1.6]
+NumMFs=5
+MF1='NB':'trimf',[-2.4 -1.6 -0.8]
+MF2='NS':'trimf',[-1.6 -0.8 0]
+MF3='ZE':'trimf',[-0.8 0 0.8]
+MF4='PS':'trimf',[0 0.8 1.6]
+MF5='PB':'trimf',[0.8 1.6 2.4]
+
+[Output1]
+Name='PWM'
+Range=[-1.6 1.6]
+NumMFs=5
+MF1='NB':'trimf',[-2.4 -1.6 -0.8]
+MF2='NS':'trimf',[-1.6 -0.8 0]
+MF3='ZE':'trimf',[-0.8 0 0.8]
+MF4='PS':'trimf',[0 0.8 1.6]
+MF5='PB':'trimf',[0.8 1.6 2.4]
+
+[Rules]
+1 1, 5 (1) : 1
+1 2, 4 (1) : 1
+1 3, 1 (1) : 1
+1 4, 2 (1) : 1
+2 1, 4 (1) : 1
+2 2, 4 (1) : 1
+2 3, 1 (1) : 1
+2 4, 2 (1) : 1
+2 5, 2 (1) : 1
+3 1, 2 (1) : 1
+3 2, 2 (1) : 1
+3 3, 5 (1) : 1
+3 5, 5 (1) : 1
+4 1, 2 (1) : 1
+4 2, 5 (1) : 1
+4 3, 4 (1) : 1
+4 4, 1 (1) : 1
+4 5, 5 (1) : 1
+5 1, 1 (1) : 1
+5 2, 1 (1) : 1
+5 3, 5 (1) : 1
+5 4, 4 (1) : 1
+5 5, 5 (1) : 1
+1 5, 2 (1) : 1
+3 4, 5 (1) : 1
