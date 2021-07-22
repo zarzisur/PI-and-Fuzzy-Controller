@@ -10,6 +10,9 @@ Fig2 Input and Output Perturbation
 
 
 
-## PI and Fuzzy Controller comparison for MPPT in Photovoltaic Systems
+## PI and Fuzzy Controller comparison for Fractional Open Circuit MPPT in Single Panel Photovoltaic System
+![fuzy pi comparison fractional OCV MPPT](https://user-images.githubusercontent.com/35787202/126681113-64d1b4ba-7cdc-43ce-81ab-5e6774625545.jpg)
+
+
 
 
